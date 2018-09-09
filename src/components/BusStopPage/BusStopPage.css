@@ -1,0 +1,14 @@
+.stop-point-name {
+    font-size: 47px;
+    line-height: 55px;
+}
+
+.line-name {
+    float: left;
+    color: #c33;
+}
+
+.expected-arrive {
+    float: right;
+    font-weight: bold;
+}

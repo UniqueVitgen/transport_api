@@ -1,0 +1,39 @@
+.stop-point-letter {
+    float: left;
+    background: red;
+    display: inline-block;
+    width: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.step-text {
+    float: left;
+    display: inline-block;
+}
+
+.title-point {
+    font-weight: bold;
+}
+
+.point-text {
+    font-style: italic;
+}
+
+.bus-number {
+    float: left;
+    margin-right: 20px;
+    color: #fff;
+    background-color: #c33;
+    padding: 0 10px;
+    font-size: 35px;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+}
