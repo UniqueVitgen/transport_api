@@ -4,7 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import {MenuItem, Nav, Navbar, NavDropdown, NavItem} from "react-bootstrap";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import Home from "../Home/Home";
 import RouteList from "../RouteList/RouteList";
 import BusStopList from "../BusStopList/BusStopList";
@@ -23,7 +23,10 @@ class App extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/routeList" component={RouteList} />
                     <Route path="/busStopList" component={BusStopList} />
-                    <Route path="/busStop/:id" component={BusStopPage} />
+                    <Switch>
+                        <Route path="/busStop/:id/:bus" component={BusStopPage} />
+                        <Route path="/busStop/:id" component={BusStopPage} />
+                    </Switch>
                     <Route path="/RoutePage/:id" component={RoutePage} />
                     <Route path="/RoutePage/:id/:bus" component={RoutePage} />
                 </div>

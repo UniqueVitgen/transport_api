@@ -11,27 +11,29 @@ class Toolbar extends Component {
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a>
-                            <Link to="/"><img className="head-icon" src="bus-stop.jpg"/> </Link>
+                            <Link to="/"><img className="head-icon" src="/blue.svg"/> </Link>
                         </a>
                     </Navbar.Brand>
                 </Navbar.Header>
-                <Nav>
+                <Nav pullLeft>
                     <NavItem eventKey={1} href="#">
                         <Link to="/">Home</Link>
                     </NavItem>
+                </Nav>
+                <Nav pullRight>
                     <NavItem eventKey={2} href="#">
                         <Link to="/routeList">Routes</Link>
                     </NavItem>
                     <NavItem eventKey={2} href="#">
                         <Link to="/busStopList">Bus stops</Link>
                     </NavItem>
-                    <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1}>Action</MenuItem>
-                        <MenuItem eventKey={3.2}>Another action</MenuItem>
-                        <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey={3.4}>Separated link</MenuItem>
-                    </NavDropdown>
+                    {/*<NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">*/}
+                        {/*<MenuItem eventKey={3.1}>Action</MenuItem>*/}
+                        {/*<MenuItem eventKey={3.2}>Another action</MenuItem>*/}
+                        {/*<MenuItem eventKey={3.3}>Something else here</MenuItem>*/}
+                        {/*<MenuItem divider />*/}
+                        {/*<MenuItem eventKey={3.4}>Separated link</MenuItem>*/}
+                    {/*</NavDropdown>*/}
                 </Nav>
             </Navbar>
         )
